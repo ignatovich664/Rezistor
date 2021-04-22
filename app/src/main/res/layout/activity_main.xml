@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnNominalBy4Lines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Номинал по 4 полосам"
+            android:onClick="btnNominalBy4LinesClick"/>
+
+        <Button
+            android:id="@+id/btnNominalBy5Lines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Номинал по 5 полосам"
+            android:onClick="btnNominalBy5LinesClick"/>
+
+        <Button
+            android:id="@+id/btnMarkingByNominal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Маркировка по номиналу"
+            android:onClick="btnMarkingByNominal"/>
+
+        <Button
+            android:id="@+id/btnJournal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Журнал"
+            android:onClick="btnJournalClick"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

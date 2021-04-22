@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarkingGeneratorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Номинал:" />
+
+        <EditText
+            android:id="@+id/txbNominal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Кратность:" />
+
+        <Spinner
+            android:id="@+id/selUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Допуск, %:" />
+
+        <Spinner
+            android:id="@+id/selTolerance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="32dp"
+            android:text="Маркировка (4 полосы):" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/col4_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/col4_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/col4_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/col4_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="32dp"
+            android:text="Маркировка (5 полос):"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/col5_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/col5_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/col5_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/col5_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/col5_5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
